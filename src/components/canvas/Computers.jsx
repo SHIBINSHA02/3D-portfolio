@@ -1,13 +1,11 @@
 import React, { Suspense } from 'react'
 import { OrbitControls, useGLTF } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
-import * as THREE from 'three';
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 const Computers = () => {
   const computer = useGLTF("./../../../adamHead/adamHead.gltf");
 
   return (
-    <mesh position={[0, 0, 0]}>
+    <mesh position={[-3, 6, 0]}>
       {/* Hemisphere light for ambient lighting */}
       <hemisphereLight intensity={2} groundColor="black" />
 
@@ -15,7 +13,7 @@ const Computers = () => {
       <pointLight intensity={2} position={[5, 5, 5]} />
 
       {/* Directional light simulating sunlight */}
-      <directionalLight intensity={3} position={[10, 10, 10]} castShadow />
+      <directionalLight intensity={3} position={[10, 80, -60]} castShadow />
 
       {/* Your 3D model */}
       <primitive object={computer.scene} />
