@@ -27,7 +27,7 @@ const Hero = () => {
           ></motion.div>
 
           {/* Gradient Line */}
-          {/* <div className="w-1 sm:h-80 h-40 bg-light-blue-gradient"></div> */}
+          <div className="w-1 sm:h-80 h-40 bg-light-blue-gradient"></div>
         </div>
 
         {/* Hero Text */}
