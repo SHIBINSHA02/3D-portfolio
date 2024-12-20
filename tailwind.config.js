@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: ["./src/**/*.{js,jsx}"],
   mode: "jit",
   theme: {
@@ -20,7 +20,8 @@ module.exports = {
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg1.jpg')",
-        'light-blue-gradient': "linear-gradient(to bottom, rgba(49, 170, 222, 1) 10%, rgba(190, 227, 248, 0) 90%)",
+        "light-blue-gradient":
+          "linear-gradient(to bottom, rgba(49, 170, 222, 1) 10%, rgba(190, 227, 248, 0) 90%)",
       },
     },
   },
